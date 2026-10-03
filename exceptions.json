@@ -1,0 +1,29 @@
+{
+  "exceptions": [
+    {
+      "rule": "Ensure that the SSH port is configured",
+      "action": "PRESERVE",
+      "reason": "Custom SSH port may be intentionally configured"
+    },
+    {
+      "rule": "Ensure that the SSH PermitRootLogin is configured",
+      "action": "REVIEW",
+      "reason": "SSH root-login configuration may be intentional"
+    },
+    {
+      "rule": "Ensure that appropriate ciphers are used for SSH",
+      "action": "REVIEW",
+      "reason": "SSH cipher configuration may be customized for compatibility"
+    },
+    {
+      "rule": "Ensure that only approved MAC algorithms are used",
+      "action": "REVIEW",
+      "reason": "SSH MAC configuration may be customized for compatibility"
+    },
+    {
+      "rule": "Ensure the default umask for all users is configured",
+      "action": "REVIEW",
+      "reason": "User-specific umask configuration may be intentional"
+    }
+  ]
+}
